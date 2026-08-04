@@ -1,5 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<plugins>
+
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>in.javahome</groupId>
 	<artifactId>myweb</artifactId>
@@ -12,6 +14,8 @@
     <artifactId>sonar-maven-plugin</artifactId>
     <version>5.1.0.4751</version>
 </plugin>
+	</plugins>
+
 	<properties>
 		<docker.image.prefix>kammana</docker.image.prefix>
 		<sonar.host.url>http://18.181.164.81:9000/</sonar.host.url>
