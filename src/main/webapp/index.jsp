@@ -4,8 +4,10 @@
 	<h1 style="color: blue; font-size: 40px;" align="center">MY 2nd VERSION</h1>
 	
 	<h1 style="color: red; font-size: 40px;" align="center">MY Copied VERSION</h1>
-	
 
+	<h1 style="color: pink; font-size: 50px;" align="center"><i>HanGovaaaa</i></h1>
+	
+	<h1 style="color: red; font-size: 50px;" align="center">BloodRave</h1>
 	
 	
 	
