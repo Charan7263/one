@@ -595,7 +595,7 @@
         <!-- Products -->
         <section class="section container" aria-labelledby="prod-title">
             <div class="title" id="prod-title">
-                <h2>Trending Products</h2>
+                <h2>Ongoing Product</h2>
                 <p class="muted">Popular picks based on recent activity.</p>
             </div>
 
