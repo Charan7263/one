@@ -1835,7 +1835,7 @@ footer {
 ======================================================= -->
 
 <div class="announcement">
-    <i class="fa-solid fa-truck-fast"></i>
+    em class="fa-solid fa-truck-fast"></i>
     Free shipping on orders over $100 • Limited-time offers available
 </div>
 
@@ -1853,7 +1853,7 @@ footer {
             id="mobileToggle"
             aria-label="Open menu">
 
-            <i class="fa-solid fa-bars"></i>
+            em class="fa-solid fa-bars"></i>
 
         </button>
 
@@ -1861,7 +1861,7 @@ footer {
         <a href="#" class="logo">
 
             <span class="logo-mark">
-                <i class="fa-solid fa-bolt"></i>
+                em class="fa-solid fa-bolt"></i>
             </span>
 
             <span>
@@ -1900,9 +1900,9 @@ footer {
 
             <div class="search-box">
 
-                <i class="fa-solid fa-magnifying-glass"></i>
+                em class="fa-solid fa-magnifying-glass"></i>
 
-                <input
+                emnput
                     id="searchInput"
                     type="search"
                     placeholder="Search products...">
@@ -1915,7 +1915,7 @@ footer {
                 id="themeToggle"
                 aria-label="Toggle theme">
 
-                <i class="fa-solid fa-moon"></i>
+                em class="fa-solid fa-moon"></i>
 
             </button>
 
@@ -1924,7 +1924,7 @@ footer {
                 class="icon-btn"
                 aria-label="Account">
 
-                <i class="fa-regular fa-user"></i>
+                em class="fa-regular fa-user"></i>
 
             </button>
 
@@ -1934,7 +1934,7 @@ footer {
                 id="cartButton"
                 aria-label="Shopping cart">
 
-                <i class="fa-solid fa-bag-shopping"></i>
+                em class="fa-solid fa-bag-shopping"></i>
 
                 <span
                     class="cart-count"
@@ -1978,7 +1978,7 @@ footer {
 
             <span class="hero-tag">
 
-                <i class="fa-solid fa-sparkles"></i>
+                em class="fa-solid fa-sparkles"></i>
 
                 New season • Premium collection
 
@@ -2011,7 +2011,7 @@ footer {
 
                     Shop Collection
 
-                    <i class="fa-solid fa-arrow-right"></i>
+                    em class="fa-solid fa-arrow-right"></i>
 
                 </button>
 
@@ -2036,7 +2036,7 @@ footer {
 
     <div class="hero-card">
 
-        <img
+        emmg
             src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=900&q=90"
             alt="Premium laptop">
 
@@ -2205,7 +2205,7 @@ footer {
             <div class="deal-info">
 
                 <span class="hero-tag">
-                    <i class="fa-solid fa-bolt"></i>
+                    em class="fa-solid fa-bolt"></i>
                     Flash Sale
                 </span>
 
@@ -2257,7 +2257,7 @@ footer {
 
                     Get Deal
 
-                    <i class="fa-solid fa-arrow-right"></i>
+                    em class="fa-solid fa-arrow-right"></i>
 
                 </button>
 
@@ -2266,7 +2266,7 @@ footer {
 
             <div class="deal-image">
 
-                <img
+                emmg
                     src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=90"
                     alt="Laptop flash sale">
 
@@ -2318,7 +2318,7 @@ footer {
 
                 <div class="customer">
 
-                    <img
+                    emmg
                         src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80"
                         alt="Customer">
 
@@ -2347,7 +2347,7 @@ footer {
 
                 <div class="customer">
 
-                    <img
+                    emmg
                         src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80"
                         alt="Customer">
 
@@ -2376,7 +2376,7 @@ footer {
 
                 <div class="customer">
 
-                    <img
+                    emmg
                         src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
                         alt="Customer">
 
@@ -2421,7 +2421,7 @@ footer {
                 class="newsletter-form"
                 id="newsletterForm">
 
-                <input
+                emnput
                     type="email"
                     id="emailInput"
                     placeholder="Enter your email"
@@ -2460,7 +2460,7 @@ footer {
                 <a href="#" class="logo">
 
                     <span class="logo-mark">
-                        <i class="fa-solid fa-bolt"></i>
+                        em class="fa-solid fa-bolt"></i>
                     </span>
 
                     Nexus<span class="gradient-text">
@@ -2481,19 +2481,19 @@ footer {
                 <div class="socials">
 
                     <button class="icon-btn">
-                        <i class="fa-brands fa-github"></i>
+                        em class="fa-brands fa-github"></i>
                     </button>
 
                     <button class="icon-btn">
-                        <i class="fa-brands fa-linkedin"></i>
+                        em class="fa-brands fa-linkedin"></i>
                     </button>
 
                     <button class="icon-btn">
-                        <i class="fa-brands fa-instagram"></i>
+                        em class="fa-brands fa-instagram"></i>
                     </button>
 
                     <button class="icon-btn">
-                        <i class="fa-brands fa-x-twitter"></i>
+                        em class="fa-brands fa-x-twitter"></i>
                     </button>
 
                 </div>
@@ -2575,7 +2575,7 @@ footer {
             class="icon-btn"
             id="closeCart">
 
-            <i class="fa-solid fa-xmark"></i>
+            em class="fa-solid fa-xmark"></i>
 
         </button>
 
@@ -2609,7 +2609,7 @@ footer {
 
             Checkout
 
-            <i class="fa-solid fa-lock"></i>
+            em class="fa-solid fa-lock"></i>
 
         </button>
 
@@ -2630,7 +2630,7 @@ footer {
 
         <div class="modal-image">
 
-            <img
+            emmg
                 id="modalImage"
                 src=""
                 alt="Product">
@@ -2644,7 +2644,7 @@ footer {
                 class="modal-close"
                 id="closeModal">
 
-                <i class="fa-solid fa-xmark"></i>
+                em class="fa-solid fa-xmark"></i>
 
             </button>
 
@@ -2684,7 +2684,7 @@ footer {
                 style="width:100%;margin-top:25px"
                 id="modalAdd">
 
-                <i class="fa-solid fa-cart-plus"></i>
+                em class="fa-solid fa-cart-plus"></i>
 
                 Add to Cart
 
@@ -2948,7 +2948,7 @@ function toast(message) {
     element.className = "toast";
 
     element.innerHTML =
-        `<i class="fa-solid fa-circle-check"></i>
+        `em class="fa-solid fa-circle-check"></i>
          &nbsp; ${message}`;
 
     document
@@ -2988,7 +2988,7 @@ function renderCategories() {
 
     all.innerHTML = `
         <div class="category-icon">
-            <i class="fa-solid fa-layer-group"></i>
+            em class="fa-solid fa-layer-group"></i>
         </div>
 
         <h3>All Products</h3>
@@ -3026,7 +3026,7 @@ function renderCategories() {
         element.innerHTML = `
 
             <div class="category-icon">
-                <i class="fa-solid ${category.icon}"></i>
+                em class="fa-solid ${category.icon}"></i>
             </div>
 
             <h3>${category.name}</h3>
@@ -3182,7 +3182,7 @@ function renderProducts() {
 
             <div class="empty-state">
 
-                <i class="fa-solid fa-box-open"></i>
+                em class="fa-solid fa-box-open"></i>
 
                 <h3>
                     No products found
@@ -3238,7 +3238,7 @@ function renderProducts() {
                     }"
                     data-wishlist="${product.id}">
 
-                    <i class="${
+                    em class="${
                         isWishlisted
                         ? "fa-solid"
                         : "fa-regular"
@@ -3247,7 +3247,7 @@ function renderProducts() {
                 </button>
 
 
-                <img
+                emmg
                     src="${product.img}"
                     alt="${product.title}"
                     loading="lazy">
@@ -3304,7 +3304,7 @@ function renderProducts() {
                     class="add-cart"
                     data-cart="${product.id}">
 
-                    <i class="fa-solid fa-cart-plus"></i>
+                    em class="fa-solid fa-cart-plus"></i>
 
                     Add to Cart
 
@@ -3316,7 +3316,7 @@ function renderProducts() {
                     style="width:100%;margin-top:8px"
                     data-view="${product.id}">
 
-                    <i class="fa-regular fa-eye"></i>
+                    em class="fa-regular fa-eye"></i>
 
                     Quick View
 
@@ -3500,7 +3500,7 @@ function renderCart() {
 
             <div class="empty-state">
 
-                <i class="fa-solid fa-cart-shopping"></i>
+                em class="fa-solid fa-cart-shopping"></i>
 
                 <h3>
                     Your cart is empty
@@ -3547,7 +3547,7 @@ function renderCart() {
 
                 <div class="cart-item">
 
-                    <img
+                    emmg
                         src="${product.img}"
                         alt="${product.title}">
 
@@ -3588,7 +3588,7 @@ function renderCart() {
                         class="remove-item"
                         onclick="removeFromCart(${product.id})">
 
-                        <i class="fa-solid fa-trash"></i>
+                        em class="fa-solid fa-trash"></i>
 
                     </button>
 
@@ -3821,9 +3821,9 @@ function updateThemeIcon() {
     themeToggle.innerHTML =
         dark
 
-        ? `<i class="fa-solid fa-sun"></i>`
+        ? `em class="fa-solid fa-sun"></i>`
 
-        : `<i class="fa-solid fa-moon"></i>`;
+        : `em class="fa-solid fa-moon"></i>`;
 
 }
 
