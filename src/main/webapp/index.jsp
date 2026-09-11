@@ -5,10 +5,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NexusShop | Pr<iium Digital Store</title>
+<title>NexusShop | Premium Digital Store</title>
 
 <meta name="description"
-      content="NexusShop — pr<iium technology, fashion and lifestyle products.">
+      content="NexusShop — premium technology, fashion and lifestyle products.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,7 +56,7 @@
     --transition: .25s ease;
 }
 
-[data-th<ie="dark"] {
+[data-theme="dark"] {
 
     --primary: #f8fafc;
 
@@ -168,10 +168,10 @@ img {
 
 
 /* =========================================================
-   ANNOUNC<iENT BAR
+   ANNOUNCemENT BAR
 ========================================================= */
 
-.announc<ient {
+.announcement {
     background:
         linear-gradient(
             90deg,
@@ -189,7 +189,7 @@ img {
     font-weight: 600;
 }
 
-.announc<ient i {
+.announcement i {
     margin-right: 7px;
 }
 
@@ -211,7 +211,7 @@ header {
     transition: .3s;
 }
 
-[data-th<ie="dark"] header {
+[data-theme="dark"] header {
     background: rgba(7,11,20,.82);
 }
 
@@ -219,7 +219,7 @@ header {
     min-height: 78px;
 
     display: flex;
-    align-it<is: center;
+    align-items: center;
     justify-content: space-between;
 
     gap: 25px;
@@ -227,7 +227,7 @@ header {
 
 .logo {
     display: flex;
-    align-it<is: center;
+    align-items: center;
     gap: 10px;
 
     font-family: Poppins;
@@ -240,7 +240,7 @@ header {
     height: 40px;
 
     display: grid;
-    place-it<is: center;
+    place-items: center;
 
     border-radius: 12px;
 
@@ -259,7 +259,7 @@ header {
 
 .main-nav {
     display: flex;
-    align-it<is: center;
+    align-items: center;
     gap: 8px;
 }
 
@@ -284,7 +284,7 @@ header {
 
 .header-right {
     display: flex;
-    align-it<is: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -292,7 +292,7 @@ header {
     width: 250px;
 
     display: flex;
-    align-it<is: center;
+    align-items: center;
 
     gap: 10px;
 
@@ -333,7 +333,7 @@ header {
     height: 42px;
 
     display: grid;
-    place-it<is: center;
+    place-items: center;
 
     border: 1px solid var(--border);
 
@@ -368,7 +368,7 @@ header {
     height: 20px;
 
     display: grid;
-    place-it<is: center;
+    place-items: center;
 
     border-radius: 50%;
 
@@ -395,7 +395,7 @@ header {
     min-height: 650px;
 
     display: flex;
-    align-it<is: center;
+    align-items: center;
 
     overflow: hidden;
 
@@ -424,7 +424,7 @@ header {
 
 .hero-tag {
     display: inline-flex;
-    align-it<is: center;
+    align-items: center;
     gap: 8px;
 
     padding: 8px 13px;
@@ -473,7 +473,7 @@ header {
 
 .btn {
     display: inline-flex;
-    align-it<is: center;
+    align-items: center;
     justify-content: center;
 
     gap: 9px;
@@ -610,7 +610,7 @@ header {
 .stats {
     display: grid;
 
-    grid-t<iplate-columns:
+    grid-template-columns:
         repeat(4, 1fr);
 
     gap: 15px;
@@ -657,7 +657,7 @@ header {
 .category-grid {
     display: grid;
 
-    grid-t<iplate-columns:
+    grid-template-columns:
         repeat(6, 1fr);
 
     gap: 16px;
@@ -700,7 +700,7 @@ header {
     margin: auto auto 12px;
 
     display: grid;
-    place-it<is: center;
+    place-items: center;
 
     border-radius: 17px;
 
@@ -730,7 +730,7 @@ header {
 .product-toolbar {
     display: flex;
 
-    align-it<is: center;
+    align-items: center;
     justify-content: space-between;
 
     gap: 15px;
@@ -774,7 +774,7 @@ header {
 .products-grid {
     display: grid;
 
-    grid-t<iplate-columns:
+    grid-template-columns:
         repeat(4, 1fr);
 
     gap: 22px;
@@ -859,7 +859,7 @@ header {
     height: 38px;
 
     display: grid;
-    place-it<is: center;
+    place-items: center;
 
     border: 0;
 
@@ -916,7 +916,7 @@ header {
 .price-row {
     display: flex;
 
-    align-it<is: center;
+    align-items: center;
     justify-content: space-between;
 
     margin-top: 13px;
@@ -990,9 +990,9 @@ header {
 .deal-content {
     display: grid;
 
-    grid-t<iplate-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
-    align-it<is: center;
+    align-items: center;
 }
 
 .deal-info {
@@ -1072,7 +1072,7 @@ header {
 .testimonials {
     display: grid;
 
-    grid-t<iplate-columns:
+    grid-template-columns:
         repeat(3, 1fr);
 
     gap: 20px;
@@ -1105,7 +1105,7 @@ header {
 .customer {
     display: flex;
 
-    align-it<is: center;
+    align-items: center;
 
     gap: 10px;
 
@@ -1199,7 +1199,7 @@ footer {
 .footer-grid {
     display: grid;
 
-    grid-t<iplate-columns:
+    grid-template-columns:
         2fr 1fr 1fr 1fr;
 
     gap: 40px;
@@ -1316,7 +1316,7 @@ footer {
 
     justify-content: space-between;
 
-    align-it<is: center;
+    align-items: center;
 
     padding: 20px;
 
@@ -1327,7 +1327,7 @@ footer {
     font-family: Poppins;
 }
 
-.cart-it<is {
+.cart-items {
     flex: 1;
 
     overflow-y: auto;
@@ -1335,21 +1335,21 @@ footer {
     padding: 20px;
 }
 
-.cart-it<i {
+.cart-item {
     display: grid;
 
-    grid-t<iplate-columns: 70px 1fr auto;
+    grid-template-columns: 70px 1fr auto;
 
     gap: 12px;
 
-    align-it<is: center;
+    align-items: center;
 
     padding: 13px 0;
 
     border-bottom: 1px solid var(--border);
 }
 
-.cart-it<i img {
+.cart-item img {
     width: 70px;
     height: 70px;
 
@@ -1358,18 +1358,18 @@ footer {
     border-radius: 12px;
 }
 
-.cart-it<i h4 {
+.cart-item h4 {
     font-size: 13px;
 }
 
-.cart-it<i small {
+.cart-item small {
     color: var(--muted);
 }
 
 .qty-controls {
     display: flex;
 
-    align-it<is: center;
+    align-items: center;
 
     gap: 8px;
 
@@ -1389,7 +1389,7 @@ footer {
     background: var(--surface-2);
 }
 
-.r<iove-it<i {
+.remove-item {
     color: var(--danger);
 
     background: transparent;
@@ -1428,7 +1428,7 @@ footer {
     z-index: 3000;
 
     display: grid;
-    place-it<is: center;
+    place-items: center;
 
     padding: 20px;
 
@@ -1452,7 +1452,7 @@ footer {
 
     display: grid;
 
-    grid-t<iplate-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
     overflow: hidden;
 
@@ -1593,10 +1593,10 @@ footer {
 
 
 /* =========================================================
-   <iPTY STATE
+   emPTY STATE
 ========================================================= */
 
-.<ipty-state {
+.empty-state {
     grid-column: 1/-1;
 
     padding: 70px 20px;
@@ -1606,7 +1606,7 @@ footer {
     color: var(--muted);
 }
 
-.<ipty-state i {
+.empty-state i {
     font-size: 45px;
 
     margin-bottom: 15px;
@@ -1659,12 +1659,12 @@ footer {
     }
 
     .category-grid {
-        grid-t<iplate-columns:
+        grid-template-columns:
             repeat(3,1fr);
     }
 
     .products-grid {
-        grid-t<iplate-columns:
+        grid-template-columns:
             repeat(3,1fr);
     }
 
@@ -1690,17 +1690,17 @@ footer {
     }
 
     .stats {
-        grid-t<iplate-columns:
+        grid-template-columns:
             repeat(2,1fr);
     }
 
     .products-grid {
-        grid-t<iplate-columns:
+        grid-template-columns:
             repeat(2,1fr);
     }
 
     .deal-content {
-        grid-t<iplate-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
     .deal-info {
@@ -1712,16 +1712,16 @@ footer {
     }
 
     .testimonials {
-        grid-t<iplate-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
     .footer-grid {
-        grid-t<iplate-columns:
+        grid-template-columns:
             repeat(2,1fr);
     }
 
     .modal-card {
-        grid-t<iplate-columns: 1fr;
+        grid-template-columns: 1fr;
         max-height: 90vh;
         overflow-y: auto;
     }
@@ -1758,7 +1758,7 @@ footer {
     .stats {
         margin-top: -25px;
 
-        grid-t<iplate-columns:
+        grid-template-columns:
             repeat(2,1fr);
     }
 
@@ -1767,12 +1767,12 @@ footer {
     }
 
     .category-grid {
-        grid-t<iplate-columns:
+        grid-template-columns:
             repeat(2,1fr);
     }
 
     .products-grid {
-        grid-t<iplate-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
     .product-image img {
@@ -1780,7 +1780,7 @@ footer {
     }
 
     .product-toolbar {
-        align-it<is: stretch;
+        align-items: stretch;
         flex-direction: column;
     }
 
@@ -1797,7 +1797,7 @@ footer {
     }
 
     .footer-grid {
-        grid-t<iplate-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
     .modal-info {
@@ -1831,11 +1831,11 @@ footer {
 <body>
 
 <!-- =======================================================
-     ANNOUNC<iENT
+     ANNOUNCemENT
 ======================================================= -->
 
-<div class="announc<ient">
-    <i class="fa-solid fa-truck-fast"></i>
+<div class="announcement">
+    em class="fa-solid fa-truck-fast"></i>
     Free shipping on orders over $100 • Limited-time offers available
 </div>
 
@@ -1853,7 +1853,7 @@ footer {
             id="mobileToggle"
             aria-label="Open menu">
 
-            <i class="fa-solid fa-bars"></i>
+            em class="fa-solid fa-bars"></i>
 
         </button>
 
@@ -1861,7 +1861,7 @@ footer {
         <a href="#" class="logo">
 
             <span class="logo-mark">
-                <i class="fa-solid fa-bolt"></i>
+                em class="fa-solid fa-bolt"></i>
             </span>
 
             <span>
@@ -1900,9 +1900,9 @@ footer {
 
             <div class="search-box">
 
-                <i class="fa-solid fa-magnifying-glass"></i>
+                em class="fa-solid fa-magnifying-glass"></i>
 
-                <input
+                emnput
                     id="searchInput"
                     type="search"
                     placeholder="Search products...">
@@ -1912,10 +1912,10 @@ footer {
 
             <button
                 class="icon-btn"
-                id="th<ieToggle"
-                aria-label="Toggle th<ie">
+                id="themeToggle"
+                aria-label="Toggle theme">
 
-                <i class="fa-solid fa-moon"></i>
+                em class="fa-solid fa-moon"></i>
 
             </button>
 
@@ -1924,7 +1924,7 @@ footer {
                 class="icon-btn"
                 aria-label="Account">
 
-                <i class="fa-regular fa-user"></i>
+                em class="fa-regular fa-user"></i>
 
             </button>
 
@@ -1934,7 +1934,7 @@ footer {
                 id="cartButton"
                 aria-label="Shopping cart">
 
-                <i class="fa-solid fa-bag-shopping"></i>
+                em class="fa-solid fa-bag-shopping"></i>
 
                 <span
                     class="cart-count"
@@ -1951,7 +1951,7 @@ footer {
 
     <div
         class="mobile-menu"
-        id="mobil<ienu">
+        id="mobilemenu">
 
         <a href="#">Home</a>
         <a href="#categories">Categories</a>
@@ -1978,9 +1978,9 @@ footer {
 
             <span class="hero-tag">
 
-                <i class="fa-solid fa-sparkles"></i>
+                em class="fa-solid fa-sparkles"></i>
 
-                New season • Pr<iium collection
+                New season • Premium collection
 
             </span>
 
@@ -1997,7 +1997,7 @@ footer {
 
             <p>
 
-                Discover pr<iium technology, fashion and lifestyle
+                Discover premium technology, fashion and lifestyle
                 products curated for people who expect more.
 
             </p>
@@ -2011,7 +2011,7 @@ footer {
 
                     Shop Collection
 
-                    <i class="fa-solid fa-arrow-right"></i>
+                    em class="fa-solid fa-arrow-right"></i>
 
                 </button>
 
@@ -2036,9 +2036,9 @@ footer {
 
     <div class="hero-card">
 
-        <img
+        emmg
             src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=900&q=90"
-            alt="Pr<iium laptop">
+            alt="Premium laptop">
 
     </div>
 
@@ -2205,7 +2205,7 @@ footer {
             <div class="deal-info">
 
                 <span class="hero-tag">
-                    <i class="fa-solid fa-bolt"></i>
+                    em class="fa-solid fa-bolt"></i>
                     Flash Sale
                 </span>
 
@@ -2220,7 +2220,7 @@ footer {
 
                 <p>
 
-                    Pr<iium laptop technology with powerful
+                    Premium laptop technology with powerful
                     performance, stunning design and all-day battery.
 
                 </p>
@@ -2257,7 +2257,7 @@ footer {
 
                     Get Deal
 
-                    <i class="fa-solid fa-arrow-right"></i>
+                    em class="fa-solid fa-arrow-right"></i>
 
                 </button>
 
@@ -2266,7 +2266,7 @@ footer {
 
             <div class="deal-image">
 
-                <img
+                emmg
                     src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=90"
                     alt="Laptop flash sale">
 
@@ -2313,12 +2313,12 @@ footer {
 
                 <p>
                     "Amazing shopping experience. The product
-                    quality was excellent and delivery was extr<iely fast."
+                    quality was excellent and delivery was extremely fast."
                 </p>
 
                 <div class="customer">
 
-                    <img
+                    emmg
                         src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80"
                         alt="Customer">
 
@@ -2347,7 +2347,7 @@ footer {
 
                 <div class="customer">
 
-                    <img
+                    emmg
                         src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80"
                         alt="Customer">
 
@@ -2376,7 +2376,7 @@ footer {
 
                 <div class="customer">
 
-                    <img
+                    emmg
                         src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
                         alt="Customer">
 
@@ -2421,10 +2421,10 @@ footer {
                 class="newsletter-form"
                 id="newsletterForm">
 
-                <input
-                    type="<iail"
-                    id="<iailInput"
-                    placeholder="Enter your <iail"
+                emnput
+                    type="email"
+                    id="emailInput"
+                    placeholder="Enter your email"
                     required>
 
                 <button
@@ -2460,7 +2460,7 @@ footer {
                 <a href="#" class="logo">
 
                     <span class="logo-mark">
-                        <i class="fa-solid fa-bolt"></i>
+                        em class="fa-solid fa-bolt"></i>
                     </span>
 
                     Nexus<span class="gradient-text">
@@ -2473,7 +2473,7 @@ footer {
                 <p>
 
                     A modern shopping experience designed
-                    around pr<iium products, simplicity and speed.
+                    around premium products, simplicity and speed.
 
                 </p>
 
@@ -2481,19 +2481,19 @@ footer {
                 <div class="socials">
 
                     <button class="icon-btn">
-                        <i class="fa-brands fa-github"></i>
+                        em class="fa-brands fa-github"></i>
                     </button>
 
                     <button class="icon-btn">
-                        <i class="fa-brands fa-linkedin"></i>
+                        em class="fa-brands fa-linkedin"></i>
                     </button>
 
                     <button class="icon-btn">
-                        <i class="fa-brands fa-instagram"></i>
+                        em class="fa-brands fa-instagram"></i>
                     </button>
 
                     <button class="icon-btn">
-                        <i class="fa-brands fa-x-twitter"></i>
+                        em class="fa-brands fa-x-twitter"></i>
                     </button>
 
                 </div>
@@ -2575,7 +2575,7 @@ footer {
             class="icon-btn"
             id="closeCart">
 
-            <i class="fa-solid fa-xmark"></i>
+            em class="fa-solid fa-xmark"></i>
 
         </button>
 
@@ -2583,8 +2583,8 @@ footer {
 
 
     <div
-        class="cart-it<is"
-        id="cartIt<is">
+        class="cart-items"
+        id="cartItems">
 
     </div>
 
@@ -2609,7 +2609,7 @@ footer {
 
             Checkout
 
-            <i class="fa-solid fa-lock"></i>
+            em class="fa-solid fa-lock"></i>
 
         </button>
 
@@ -2630,7 +2630,7 @@ footer {
 
         <div class="modal-image">
 
-            <img
+            emmg
                 id="modalImage"
                 src=""
                 alt="Product">
@@ -2642,9 +2642,9 @@ footer {
 
             <button
                 class="modal-close"
-                id="clos<iodal">
+                id="closemodal">
 
-                <i class="fa-solid fa-xmark"></i>
+                em class="fa-solid fa-xmark"></i>
 
             </button>
 
@@ -2673,7 +2673,7 @@ footer {
 
             <p class="text-muted">
 
-                Pr<iium quality product with carefully
+                Premium quality product with carefully
                 selected materials and excellent performance.
 
             </p>
@@ -2684,7 +2684,7 @@ footer {
                 style="width:100%;margin-top:25px"
                 id="modalAdd">
 
-                <i class="fa-solid fa-cart-plus"></i>
+                em class="fa-solid fa-cart-plus"></i>
 
                 Add to Cart
 
@@ -2735,7 +2735,7 @@ const PRODUCTS = [
         price: 1999,
         rating: 4,
         reviews: 86,
-        badge: "Pr<iium",
+        badge: "Premium",
         category: "Laptops",
         icon: "fa-laptop",
         img:
@@ -2783,7 +2783,7 @@ const PRODUCTS = [
 
     {
         id: 6,
-        title: "Pr<iium Fragrance",
+        title: "Premium Fragrance",
         price: 120,
         rating: 5,
         reviews: 189,
@@ -2869,12 +2869,12 @@ const CATEGORIES = [
 
 let cart =
     JSON.parse(
-        localStorage.getIt<i("nexus-cart")
+        localStorage.getItem("nexus-cart")
     ) || [];
 
 let wishlist =
     JSON.parse(
-        localStorage.getIt<i("nexus-wishlist")
+        localStorage.getItem("nexus-wishlist")
     ) || [];
 
 let activeCategory = "All";
@@ -2887,34 +2887,34 @@ let currentModalProduct = null;
 ========================================================= */
 
 const productsGrid =
-    document.getEl<ientById("productsGrid");
+    document.getElementById("productsGrid");
 
 const categoryGrid =
-    document.getEl<ientById("categoryGrid");
+    document.getElementById("categoryGrid");
 
 const searchInput =
-    document.getEl<ientById("searchInput");
+    document.getElementById("searchInput");
 
 const sortSelect =
-    document.getEl<ientById("sortSelect");
+    document.getElementById("sortSelect");
 
 const cartCount =
-    document.getEl<ientById("cartCount");
+    document.getElementById("cartCount");
 
-const cartIt<is =
-    document.getEl<ientById("cartIt<is");
+const cartItems =
+    document.getElementById("cartItems");
 
 const cartTotal =
-    document.getEl<ientById("cartTotal");
+    document.getElementById("cartTotal");
 
 const cartDrawer =
-    document.getEl<ientById("cartDrawer");
+    document.getElementById("cartDrawer");
 
 const overlay =
-    document.getEl<ientById("overlay");
+    document.getElementById("overlay");
 
 const productModal =
-    document.getEl<ientById("productModal");
+    document.getElementById("productModal");
 
 
 /* =========================================================
@@ -2923,12 +2923,12 @@ const productModal =
 
 function saveState() {
 
-    localStorage.setIt<i(
+    localStorage.setItem(
         "nexus-cart",
         JSON.stringify(cart)
     );
 
-    localStorage.setIt<i(
+    localStorage.setItem(
         "nexus-wishlist",
         JSON.stringify(wishlist)
     );
@@ -2942,28 +2942,28 @@ function saveState() {
 
 function toast(message) {
 
-    const el<ient =
-        document.createEl<ient("div");
+    const element =
+        document.createElement("div");
 
-    el<ient.className = "toast";
+    element.className = "toast";
 
-    el<ient.innerHTML =
-        `<i class="fa-solid fa-circle-check"></i>
+    element.innerHTML =
+        `em class="fa-solid fa-circle-check"></i>
          &nbsp; ${message}`;
 
     document
-        .getEl<ientById("toastContainer")
-        .appendChild(el<ient);
+        .getElementById("toastContainer")
+        .appendChild(element);
 
     setTimeout(() => {
 
-        el<ient.style.opacity = "0";
+        element.style.opacity = "0";
 
-        el<ient.style.transform =
+        element.style.transform =
             "translateX(30px)";
 
         setTimeout(
-            () => el<ient.r<iove(),
+            () => element.remove(),
             300
         );
 
@@ -2981,14 +2981,14 @@ function renderCategories() {
     categoryGrid.innerHTML = "";
 
     const all =
-        document.createEl<ient("div");
+        document.createElement("div");
 
     all.className =
         `category ${activeCategory === "All" ? "active" : ""}`;
 
     all.innerHTML = `
         <div class="category-icon">
-            <i class="fa-solid fa-layer-group"></i>
+            em class="fa-solid fa-layer-group"></i>
         </div>
 
         <h3>All Products</h3>
@@ -3017,16 +3017,16 @@ function renderCategories() {
                 p => p.category === category.name
             ).length;
 
-        const el<ient =
-            document.createEl<ient("div");
+        const element =
+            document.createElement("div");
 
-        el<ient.className =
+        element.className =
             `category ${activeCategory === category.name ? "active" : ""}`;
 
-        el<ient.innerHTML = `
+        element.innerHTML = `
 
             <div class="category-icon">
-                <i class="fa-solid ${category.icon}"></i>
+                em class="fa-solid ${category.icon}"></i>
             </div>
 
             <h3>${category.name}</h3>
@@ -3037,7 +3037,7 @@ function renderCategories() {
 
         `;
 
-        el<ient.onclick = () => {
+        element.onclick = () => {
 
             activeCategory =
                 category.name;
@@ -3046,14 +3046,14 @@ function renderCategories() {
             renderProducts();
 
             document
-                .getEl<ientById("products")
+                .getElementById("products")
                 .scrollIntoView({
                     behavior: "smooth"
                 });
 
         };
 
-        categoryGrid.appendChild(el<ient);
+        categoryGrid.appendChild(element);
 
     });
 
@@ -3170,7 +3170,7 @@ function renderProducts() {
     productsGrid.innerHTML = "";
 
 
-    document.getEl<ientById(
+    document.getElementById(
         "resultCount"
     ).textContent =
         `Showing ${products.length} of ${PRODUCTS.length} products`;
@@ -3180,9 +3180,9 @@ function renderProducts() {
 
         productsGrid.innerHTML = `
 
-            <div class="<ipty-state">
+            <div class="empty-state">
 
-                <i class="fa-solid fa-box-open"></i>
+                em class="fa-solid fa-box-open"></i>
 
                 <h3>
                     No products found
@@ -3208,7 +3208,7 @@ function renderProducts() {
 
 
         const card =
-            document.createEl<ient("article");
+            document.createElement("article");
 
         card.className =
             "product-card reveal";
@@ -3238,7 +3238,7 @@ function renderProducts() {
                     }"
                     data-wishlist="${product.id}">
 
-                    <i class="${
+                    em class="${
                         isWishlisted
                         ? "fa-solid"
                         : "fa-regular"
@@ -3247,7 +3247,7 @@ function renderProducts() {
                 </button>
 
 
-                <img
+                emmg
                     src="${product.img}"
                     alt="${product.title}"
                     loading="lazy">
@@ -3304,7 +3304,7 @@ function renderProducts() {
                     class="add-cart"
                     data-cart="${product.id}">
 
-                    <i class="fa-solid fa-cart-plus"></i>
+                    em class="fa-solid fa-cart-plus"></i>
 
                     Add to Cart
 
@@ -3316,7 +3316,7 @@ function renderProducts() {
                     style="width:100%;margin-top:8px"
                     data-view="${product.id}">
 
-                    <i class="fa-regular fa-eye"></i>
+                    em class="fa-regular fa-eye"></i>
 
                     Quick View
 
@@ -3406,7 +3406,7 @@ function addToCart(id) {
 
     const existing =
         cart.find(
-            it<i => it<i.id === id
+            item => item.id === id
         );
 
 
@@ -3434,22 +3434,22 @@ function addToCart(id) {
 
 function updateQuantity(id, change) {
 
-    const it<i =
+    const item =
         cart.find(
-            it<i => it<i.id === id
+            item => item.id === id
         );
 
-    if (!it<i) return;
+    if (!item) return;
 
 
-    it<i.quantity += change;
+    item.quantity += change;
 
 
-    if (it<i.quantity <= 0) {
+    if (item.quantity <= 0) {
 
         cart =
             cart.filter(
-                it<i => it<i.id !== id
+                item => item.id !== id
             );
 
     }
@@ -3461,17 +3461,17 @@ function updateQuantity(id, change) {
 }
 
 
-function r<ioveFromCart(id) {
+function removeFromCart(id) {
 
     cart =
         cart.filter(
-            it<i => it<i.id !== id
+            item => item.id !== id
         );
 
     saveState();
     renderCart();
 
-    toast("Product r<ioved");
+    toast("Product removed");
 
 }
 
@@ -3482,28 +3482,28 @@ function r<ioveFromCart(id) {
 
 function renderCart() {
 
-    const totalIt<is =
+    const totalItems =
         cart.reduce(
-            (sum,it<i) =>
-                sum + it<i.quantity,
+            (sum,item) =>
+                sum + item.quantity,
             0
         );
 
 
     cartCount.textContent =
-        totalIt<is;
+        totalItems;
 
 
     if (!cart.length) {
 
-        cartIt<is.innerHTML = `
+        cartItems.innerHTML = `
 
-            <div class="<ipty-state">
+            <div class="empty-state">
 
-                <i class="fa-solid fa-cart-shopping"></i>
+                em class="fa-solid fa-cart-shopping"></i>
 
                 <h3>
-                    Your cart is <ipty
+                    Your cart is empty
                 </h3>
 
                 <p>
@@ -3525,12 +3525,12 @@ function renderCart() {
     let total = 0;
 
 
-    cartIt<is.innerHTML =
-        cart.map(it<i => {
+    cartItems.innerHTML =
+        cart.map(item => {
 
             const product =
                 PRODUCTS.find(
-                    p => p.id === it<i.id
+                    p => p.id === item.id
                 );
 
 
@@ -3540,14 +3540,14 @@ function renderCart() {
 
             total +=
                 product.price *
-                it<i.quantity;
+                item.quantity;
 
 
             return `
 
-                <div class="cart-it<i">
+                <div class="cart-item">
 
-                    <img
+                    emmg
                         src="${product.img}"
                         alt="${product.title}">
 
@@ -3571,7 +3571,7 @@ function renderCart() {
                             </button>
 
                             <strong>
-                                ${it<i.quantity}
+                                ${item.quantity}
                             </strong>
 
                             <button
@@ -3585,10 +3585,10 @@ function renderCart() {
 
 
                     <button
-                        class="r<iove-it<i"
-                        onclick="r<ioveFromCart(${product.id})">
+                        class="remove-item"
+                        onclick="removeFromCart(${product.id})">
 
-                        <i class="fa-solid fa-trash"></i>
+                        em class="fa-solid fa-trash"></i>
 
                     </button>
 
@@ -3615,10 +3615,10 @@ function toggleWishlist(id) {
 
         wishlist =
             wishlist.filter(
-                it<i => it<i !== id
+                item => item !== id
             );
 
-        toast("R<ioved from wishlist");
+        toast("Removed from wishlist");
 
     } else {
 
@@ -3650,20 +3650,20 @@ function openCart() {
 
 function closeCart() {
 
-    cartDrawer.classList.r<iove("active");
+    cartDrawer.classList.remove("active");
 
-    overlay.classList.r<iove("active");
+    overlay.classList.remove("active");
 
 }
 
 
 document
-    .getEl<ientById("cartButton")
+    .getElementById("cartButton")
     .onclick = openCart;
 
 
 document
-    .getEl<ientById("closeCart")
+    .getElementById("closeCart")
     .onclick = closeCart;
 
 
@@ -3688,30 +3688,30 @@ function openProductModal(id) {
         product;
 
 
-    document.getEl<ientById(
+    document.getElementById(
         "modalImage"
     ).src = product.img;
 
 
-    document.getEl<ientById(
+    document.getElementById(
         "modalTitle"
     ).textContent =
         product.title;
 
 
-    document.getEl<ientById(
+    document.getElementById(
         "modalCategory"
     ).textContent =
         product.category;
 
 
-    document.getEl<ientById(
+    document.getElementById(
         "modalPrice"
     ).textContent =
         `$${product.price.toLocaleString()}`;
 
 
-    document.getEl<ientById(
+    document.getElementById(
         "modalRating"
     ).innerHTML =
         `${"★".repeat(product.rating)}
@@ -3725,13 +3725,13 @@ function openProductModal(id) {
 
 function closeProductModal() {
 
-    productModal.classList.r<iove("active");
+    productModal.classList.remove("active");
 
 }
 
 
 document
-    .getEl<ientById("clos<iodal")
+    .getElementById("closemodal")
     .onclick =
     closeProductModal;
 
@@ -3751,7 +3751,7 @@ productModal.onclick = event => {
 
 
 document
-    .getEl<ientById("modalAdd")
+    .getElementById("modalAdd")
     .onclick = () => {
 
         if (!currentModalProduct)
@@ -3787,52 +3787,52 @@ sortSelect.addEventListener(
 
 
 /* =========================================================
-   TH<iE
+   THemE
 ========================================================= */
 
-const th<ieToggle =
-    document.getEl<ientById(
-        "th<ieToggle"
+const themeToggle =
+    document.getElementById(
+        "themeToggle"
     );
 
 
-const savedTh<ie =
-    localStorage.getIt<i(
-        "nexus-th<ie"
+const savedTheme =
+    localStorage.getItem(
+        "nexus-theme"
     );
 
 
-if (savedTh<ie) {
+if (savedTheme) {
 
-    document.documentEl<ient
-        .dataset.th<ie =
-        savedTh<ie;
+    document.documentElement
+        .dataset.theme =
+        savedTheme;
 
 }
 
 
-function updateTh<ieIcon() {
+function updateThemeIcon() {
 
     const dark =
-        document.documentEl<ient
-            .dataset.th<ie === "dark";
+        document.documentElement
+            .dataset.theme === "dark";
 
 
-    th<ieToggle.innerHTML =
+    themeToggle.innerHTML =
         dark
 
-        ? `<i class="fa-solid fa-sun"></i>`
+        ? `em class="fa-solid fa-sun"></i>`
 
-        : `<i class="fa-solid fa-moon"></i>`;
+        : `em class="fa-solid fa-moon"></i>`;
 
 }
 
 
-th<ieToggle.onclick = () => {
+themeToggle.onclick = () => {
 
     const current =
-        document.documentEl<ient
-            .dataset.th<ie;
+        document.documentElement
+            .dataset.theme;
 
 
     const next =
@@ -3841,23 +3841,23 @@ th<ieToggle.onclick = () => {
         : "dark";
 
 
-    document.documentEl<ient
-        .dataset.th<ie =
+    document.documentElement
+        .dataset.theme =
         next;
 
 
-    localStorage.setIt<i(
-        "nexus-th<ie",
+    localStorage.setItem(
+        "nexus-theme",
         next
     );
 
 
-    updateTh<ieIcon();
+    updateThemeIcon();
 
 };
 
 
-updateTh<ieIcon();
+updateThemeIcon();
 
 
 /* =========================================================
@@ -3865,24 +3865,24 @@ updateTh<ieIcon();
 ========================================================= */
 
 const mobileToggle =
-    document.getEl<ientById(
+    document.getElementById(
         "mobileToggle"
     );
 
-const mobil<ienu =
-    document.getEl<ientById(
-        "mobil<ienu"
+const mobilemenu =
+    document.getElementById(
+        "mobilemenu"
     );
 
 
 mobileToggle.onclick = () => {
 
     const open =
-        mobil<ienu.style.display ===
+        mobilemenu.style.display ===
         "block";
 
 
-    mobil<ienu.style.display =
+    mobilemenu.style.display =
         open
         ? "none"
         : "block";
@@ -3890,13 +3890,13 @@ mobileToggle.onclick = () => {
 };
 
 
-mobil<ienu
+mobilemenu
     .querySelectorAll("a")
     .forEach(link => {
 
         link.onclick = () => {
 
-            mobil<ienu.style.display =
+            mobilemenu.style.display =
                 "none";
 
         };
@@ -3909,11 +3909,11 @@ mobil<ienu
 ========================================================= */
 
 document
-    .getEl<ientById("shopNow")
+    .getElementById("shopNow")
     .onclick = () => {
 
         document
-            .getEl<ientById("products")
+            .getElementById("products")
             .scrollIntoView({
                 behavior: "smooth"
             });
@@ -3922,11 +3922,11 @@ document
 
 
 document
-    .getEl<ientById("heroDeals")
+    .getElementById("heroDeals")
     .onclick = () => {
 
         document
-            .getEl<ientById("deals")
+            .getElementById("deals")
             .scrollIntoView({
                 behavior: "smooth"
             });
@@ -3935,7 +3935,7 @@ document
 
 
 document
-    .getEl<ientById("dealButton")
+    .getElementById("dealButton")
     .onclick = () => {
 
         addToCart(2);
@@ -3950,13 +3950,13 @@ document
 ========================================================= */
 
 document
-    .getEl<ientById("checkoutButton")
+    .getElementById("checkoutButton")
     .onclick = () => {
 
         if (!cart.length) {
 
             toast(
-                "Your cart is <ipty"
+                "Your cart is empty"
             );
 
             return;
@@ -3976,19 +3976,19 @@ document
 ========================================================= */
 
 document
-    .getEl<ientById("newsletterForm")
+    .getElementById("newsletterForm")
     .onsubmit = event => {
 
         event.preventDefault();
 
 
-        const <iail =
-            document.getEl<ientById(
-                "<iailInput"
+        const email =
+            document.getElementById(
+                "emailInput"
             ).value.trim();
 
 
-        if (!<iail) return;
+        if (!email) return;
 
 
         toast(
@@ -4058,25 +4058,25 @@ function updateCountdown() {
         ) % 60;
 
 
-    document.getEl<ientById(
+    document.getElementById(
         "days"
     ).textContent =
         String(days).padStart(2,"0");
 
 
-    document.getEl<ientById(
+    document.getElementById(
         "hours"
     ).textContent =
         String(hours).padStart(2,"0");
 
 
-    document.getEl<ientById(
+    document.getElementById(
         "minutes"
     ).textContent =
         String(minutes).padStart(2,"0");
 
 
-    document.getEl<ientById(
+    document.getElementById(
         "seconds"
     ).textContent =
         String(seconds).padStart(2,"0");
@@ -4098,7 +4098,7 @@ updateCountdown();
 
 function observeReveals() {
 
-    const el<ients =
+    const elements =
         document.querySelectorAll(
             ".reveal:not(.visible)"
         );
@@ -4109,7 +4109,7 @@ function observeReveals() {
             in window)
     ) {
 
-        el<ients.forEach(
+        elements.forEach(
             el =>
                 el.classList.add(
                     "visible"
@@ -4152,9 +4152,9 @@ function observeReveals() {
         );
 
 
-    el<ients.forEach(
-        el<ient =>
-            observer.observe(el<ient)
+    elements.forEach(
+        element =>
+            observer.observe(element)
     );
 
 }
@@ -4181,7 +4181,7 @@ document.addEventListener(
 
         if (
             event.key === "/" &&
-            document.activeEl<ient.tagName !==
+            document.activeElement.tagName !==
             "INPUT"
         ) {
 
@@ -4199,7 +4199,7 @@ document.addEventListener(
    INITIALIZATION
 ========================================================= */
 
-document.getEl<ientById(
+document.getElementById(
     "year"
 ).textContent =
     new Date().getFullYear();
