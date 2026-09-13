@@ -20,8 +20,8 @@ pipeline {
             steps {
                 echo 'Building Docker image...'
                 script {
-                    def imageName = "myapp"
-                    def tag = "latest"
+                    def imageName = "harsha0310/shared-jenkins"
+                    def tag = "${env.BUILD_NUMBER}"
                     dockerBuild(imageName, tag)
                 }
             }
@@ -30,9 +30,9 @@ pipeline {
             steps {
                 echo 'Docker Push...'
                 script {
-                    def imageName = "myapp"
-                    def tag = "latest"
-                    dockerPush(imageName, tag)
+                    def imageName = "harsha0310/shared-jenkins"
+                    def tag = "${env.BUILD_NUMBER}"
+                    dockerBuild(imageName, tag)
                 }
             }
         }
