@@ -36,7 +36,7 @@ pipeline {
                 script {
                     def imageName = "harsha0310/shared-jenkins"
                     def tag = "${env.BUILD_NUMBER}"
-                    dockerBuild(imageName, tag)
+                    dockerPush(imageName, tag)
                 }
             }
         }
