@@ -1150,8 +1150,8 @@
                 </div>
 
                 <div class="header-actions">
-                    <button class="icon-btn" title="Account" aria-label="Account"><i class="far fa-user"></i></button>
-                    <button class="icon-btn" title="Wishlist" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+                    <button class="icon-btn" title="Account" aria-label="Account"><em class="far fa-user"></em></button>
+                    <button class="icon-btn" title="Wishlist" aria-label="Wishlist"><em class="far fa-heart"></em></button>
                     <div class="cart-wrap">
                         <button class="icon-btn" id="cartBtn" title="Cart" aria-label="Cart">
                             <i class="fas fa-shopping-bag"></i>
