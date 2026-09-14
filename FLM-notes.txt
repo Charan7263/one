@@ -1,0 +1,84 @@
+August -06 -2026
+
+support mail: flmtechteam.devops@gmail.com
+Support number: 9000249924
+
+
+padala\91888
+
+icacls "C:\path\to\file.txt" /grant UserName:F
+
+MyFirstKeyPair.pem
+
+
+:: Reset the file permissions
+icacls MyFirstKeyPair.pem /reset
+
+:: Grant read access to your specific user
+icacls MyFirstKeyPair.pem /grant:r 91888:(r)
+
+:: Turn off permission inheritance completely
+icacls MyFirstKeyPair.pem /inheritance:r
+
+
+
+ssh -i "C:\Users\91888\Desktop\FLM\MyFirstKeyPair.pem" ec2-user@ec2-16-192-188-62.eu-north-1.compute.amazonaws.com
+
+from windows command prompt:
+
+STEP 1 :  :: Reset the file permissions
+icacls your_key.pem /reset
+
+C:\Users\91888\Desktop\FLM>icacls MyFirstKeyPair.pem /reset
+processed file: MyFirstKeyPair.pem
+Successfully processed 1 files; Failed processing 0 files
+
+STEP 2: :: Grant read access to your specific user
+icacls your_key.pem /grant:r %USERNAME%:(r)
+
+C:\Users\91888\Desktop\FLM>icacls MyFirstKeyPair.pem /grant:r 91888:(r)
+processed file: MyFirstKeyPair.pem
+Successfully processed 1 files; Failed processing 0 files
+
+STEP 3 : 
+ssh -i "C:\path\to\your_key.pem" username@your-instance-public-dns
+
+
+C:\Users\91888\Desktop\FLM>ssh -i "C:\Users\91888\Desktop\FLM\MyFirstKeyPair.pem" ec2-user@ec2-16-192-188-62.eu-north-1.compute.amazonaws.com
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+[ec2-user@ip-172-31-15-179 ~]$
+
+*********
+
+login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+Passphrase for key "imported-openssh-key":
+   ,     #_
+   ~\_  ####_        Amazon Linux 2023
+  ~~  \_#####\
+  ~~     \###|
+  ~~       \#/ ___   https://aws.amazon.com/linux/amazon-linux-2023
+   ~~       V~' '->
+    ~~~         /
+      ~~._.   _/
+         _/ _/
+       _/m/'
+Last login: Tue Aug 11 15:59:36 2026 from 49.205.114.148
+[ec2-user@ip-172-31-15-179 ~]$
+Last login: Tue Aug 11 16:44:09 2026 from 49.205.114.148
+[ec2-user@ip-172-31-15-179 ~]$
+
+**********
+PAT token - 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 
+
+user - maheshpolumuri
+
