@@ -1118,7 +1118,6 @@
         }
     </style>
 </head>
-
 <body>
 
     <!-- ===== HEADER ===== -->
@@ -1151,8 +1150,8 @@
                 </div>
 
                 <div class="header-actions">
-                    <button class="icon-btn" title="Account" aria-label="Account"><i class="far fa-user"></i></button>
-                    <button class="icon-btn" title="Wishlist" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+                    <button class="icon-btn" title="Account" aria-label="Account"><em class="far fa-user"></em></button>
+                    <button class="icon-btn" title="Wishlist" aria-label="Wishlist"><em class="far fa-heart"></em></button>
                     <div class="cart-wrap">
                         <button class="icon-btn" id="cartBtn" title="Cart" aria-label="Cart">
                             <i class="fas fa-shopping-bag"></i>
@@ -1570,18 +1569,337 @@
             setTimeout(() => cartBtn.style.color = '', 400);
         }
 
-        function filterProducts(query) {
-            const q = String(query || '').trim().toLowerCase();
-            if (!q) {
-                renderProducts(PRODUCTS);
-                return;
-            }
-            const filtered = PRODUCTS.filter(p =>
-                p.title.toLowerCase().includes(q) ||
-                p.category.toLowerCase().includes(q)
-            );
-            renderProducts(filtered);
+        <p class="stock-note"><i class="fas fa-fire"></i> Only <strong>12</strong> left in stock</p>
+
+        <button class="btn btn-primary" id="buyDeal">Buy this deal <i class="fas fa-shopping-cart"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="about">
+    <div class="section-head">
+      <h2 class="display">Customer notes</h2>
+      <p>Unedited, from verified orders.</p>
+    </div>
+    <div class="testimonials">
+      <article class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"Fast shipping, careful packaging and support that actually replies. The product beat what I expected."</p>
+        <div class="customer">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" alt="Ava Martin">
+          <div><strong>Ava Martin</strong><small>Verified buyer</small></div>
+        </div>
+      </article>
+      <article class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"Easy to browse, easy to check out. Good range without the usual clutter of options."</p>
+        <div class="customer">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Michael Lee">
+          <div><strong>Michael Lee</strong><small>Frequent buyer</small></div>
+        </div>
+      </article>
+      <article class="testimonial">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"Good deals on things I'd actually buy at full price. This is my first stop before anywhere else now."</p>
+        <div class="customer">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Sophia Williams">
+          <div><strong>Sophia Williams</strong><small>Verified buyer</small></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="newsletter">
+      <h2 class="display">Get the next catalog first</h2>
+      <p>New arrivals and deal drops, roughly twice a month, no spam.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input id="newsletterEmail" type="email" placeholder="Enter your email address" aria-label="Email address" required>
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+      <div class="newsletter-message" id="newsletterMsg"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">NexusShop</div>
+      <p class="footer-text">A small, carefully edited marketplace for tech, footwear and everyday accessories.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <div class="footer-links">
+        <a href="#products">Trending products</a>
+        <a href="#categories">Categories</a>
+        <a href="#deals">Flash deals</a>
+        <a href="#">New arrivals</a>
+      </div>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <div class="footer-links">
+        <a href="#about">About us</a>
+        <a href="#">Careers</a>
+        <a href="#">Our story</a>
+        <a href="#">Press</a>
+      </div>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <div class="footer-links">
+        <a href="#">Help center</a>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+        <a href="#">Contact us</a>
+      </div>
+    </div>
+  </div>
+  <div class="container copyright">© <span id="year"></span> NexusShop. All rights reserved.</div>
+</footer>
+
+<div class="toast" id="toast">
+  <i class="fas fa-circle-check"></i>
+  <span id="toastMessage">Added to cart</span>
+</div>
+
+<script>
+  const CATEGORIES = [
+    { id:"phones", name:"Smartphones", icon:"fa-mobile-screen-button" },
+    { id:"laptops", name:"Laptops", icon:"fa-laptop" },
+    { id:"clothing", name:"Clothing", icon:"fa-shirt" },
+    { id:"gadgets", name:"Gadgets", icon:"fa-headphones" },
+    { id:"footwear", name:"Footwear", icon:"fa-shoe-prints" },
+    { id:"accessories", name:"Accessories", icon:"fa-watch" }
+  ];
+
+  const PRODUCTS = [
+    { id:1, title:"iPhone 14 Pro Max", price:1099, oldPrice:1199, rating:5, reviews:128, badge:"New", category:"phones", image:"https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=700&q=85" },
+    { id:2, title:'MacBook Pro 14"', price:1999, rating:5, reviews:86, category:"laptops", image:"https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=700&q=85" },
+    { id:3, title:"Apple Watch Series 8", price:349, oldPrice:399, rating:5, reviews:214, badge:"-25%", category:"accessories", image:"https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=85" },
+    { id:4, title:"Nike Air Max 270", price:150, rating:4, reviews:53, category:"footwear", image:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=85" },
+    { id:5, title:"Sony A7 IV Camera", price:2499, rating:5, reviews:42, category:"gadgets", image:"https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=700&q=85" },
+    { id:6, title:"Premium Perfume", price:120, rating:5, reviews:189, category:"accessories", image:"https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=700&q=85" },
+    { id:7, title:"Travel Backpack", price:79, oldPrice:99, rating:4, reviews:67, category:"accessories", image:"https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=85" },
+    { id:8, title:"Sony WH-1000XM5", price:399, rating:5, reviews:156, category:"gadgets", image:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=85" }
+  ];
+
+  const categoriesGrid = document.getElementById("categoriesGrid");
+  const productsGrid = document.getElementById("productsGrid");
+  const searchInput = document.getElementById("searchInput");
+  const cartCountEl = document.getElementById("cartCount");
+  const toast = document.getElementById("toast");
+  const toastMessage = document.getElementById("toastMessage");
+
+  let cartCount = 0;
+
+  function escapeHtml(text){
+    return String(text).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  }
+
+  let toastTimer;
+  function showToast(message){
+    toastMessage.textContent = message;
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove("show"), 2200);
+  }
+
+  function renderCategories(){
+    categoriesGrid.innerHTML = "";
+    CATEGORIES.forEach(category => {
+      const card = document.createElement("div");
+      card.className = "cat-card";
+      card.innerHTML = `
+        <div class="cat-icon"><i class="fas ${category.icon}"></i></div>
+        <h4>${escapeHtml(category.name)}</h4>
+        <small>Explore ${escapeHtml(category.name)}</small>
+      `;
+      card.addEventListener("click", () => {
+        searchInput.value = category.name;
+        filterProducts(category.name);
+        document.getElementById("products").scrollIntoView({ behavior: "smooth" });
+      });
+      categoriesGrid.appendChild(card);
+    });
+  }
+
+  function renderProducts(products){
+    productsGrid.innerHTML = "";
+
+    if (!products.length){
+      productsGrid.innerHTML = `
+        <div class="empty-state">
+          <i class="fas fa-box-open"></i>
+          <h3>No products found</h3>
+          <p>Try another search term.</p>
+        </div>
+      `;
+      return;
+    }
+
+    products.forEach(product => {
+      const article = document.createElement("article");
+      article.className = "product";
+      const stars = "★".repeat(Math.round(product.rating));
+
+      article.innerHTML = `
+        <div class="product-image">
+          ${product.badge ? `<span class="product-badge">${escapeHtml(product.badge)}</span>` : ""}
+          <button class="wishlist" aria-label="Add to wishlist" data-wishlist="${product.id}"><i class="far fa-heart"></i></button>
+          <img src="${product.image}" alt="${escapeHtml(product.title)}" loading="lazy">
+        </div>
+        <div class="product-body">
+          <div class="product-category">${escapeHtml(product.category)}</div>
+          <h3>${escapeHtml(product.title)}</h3>
+          <div class="rating">${stars}<span>(${product.reviews})</span></div>
+          <div class="price">
+            $${product.price.toLocaleString()}
+            ${product.oldPrice ? `<span class="old-price">$${product.oldPrice.toLocaleString()}</span>` : ""}
+          </div>
+        </div>
+        <div class="product-footer">
+          <button class="add-btn" data-id="${product.id}"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      `;
+      productsGrid.appendChild(article);
+    });
+
+    productsGrid.querySelectorAll(".add-btn").forEach(button => {
+      button.addEventListener("click", () => addToCart(Number(button.dataset.id), button));
+    });
+
+    productsGrid.querySelectorAll(".wishlist").forEach(button => {
+      button.addEventListener("click", () => {
+        button.classList.toggle("active");
+        const icon = button.querySelector("i");
+        if (button.classList.contains("active")){
+          icon.className = "fas fa-heart";
+          showToast("Added to wishlist");
+        } else {
+          icon.className = "far fa-heart";
+          showToast("Removed from wishlist");
         }
+      });
+    });
+  }
+
+  function addToCart(productId, button){
+    const product = PRODUCTS.find(item => item.id === productId);
+    if (!product) return;
+
+    cartCount++;
+    cartCountEl.textContent = cartCount;
+
+    const original = button.innerHTML;
+    button.innerHTML = `<i class="fas fa-check"></i> Added`;
+    button.disabled = true;
+    showToast(`${product.title} added to cart`);
+
+    setTimeout(() => {
+      button.innerHTML = original;
+      button.disabled = false;
+    }, 1400);
+  }
+
+  function filterProducts(query){
+    const value = String(query || "").trim().toLowerCase();
+    if (!value){ renderProducts(PRODUCTS); return; }
+    const filtered = PRODUCTS.filter(p =>
+      p.title.toLowerCase().includes(value) || p.category.toLowerCase().includes(value)
+    );
+    renderProducts(filtered);
+  }
+
+  searchInput.addEventListener("input", e => filterProducts(e.target.value));
+
+  const mobileToggle = document.getElementById("mobileToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+  mobileToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("open");
+    const icon = mobileToggle.querySelector("i");
+    icon.className = mobileMenu.classList.contains("open") ? "fas fa-xmark" : "fas fa-bars";
+  });
+  mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("open");
+      mobileToggle.querySelector("i").className = "fas fa-bars";
+    });
+  });
+
+  document.getElementById("shopNow").addEventListener("click", () => {
+    document.getElementById("products").scrollIntoView({ behavior: "smooth" });
+  });
+  document.getElementById("exploreDeals").addEventListener("click", () => {
+    document.getElementById("deals").scrollIntoView({ behavior: "smooth" });
+  });
+  document.getElementById("buyDeal").addEventListener("click", () => {
+    cartCount++;
+    cartCountEl.textContent = cartCount;
+    showToast("MacBook Air M2 added to cart");
+  });
+  document.getElementById("cartBtn").addEventListener("click", () => {
+    showToast(cartCount === 0 ? "Your cart is empty" : `You have ${cartCount} item(s) in your cart`);
+  });
+
+  document.getElementById("newsletterForm").addEventListener("submit", event => {
+    event.preventDefault();
+    const email = document.getElementById("newsletterEmail").value.trim();
+    const message = document.getElementById("newsletterMsg");
+
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+      message.textContent = "Please enter a valid email address.";
+      message.style.color = "#BD4128";
+      return;
+    }
+
+    message.textContent = "You're subscribed! Welcome to NexusShop.";
+    message.style.color = "#E7A93C";
+    document.getElementById("newsletterEmail").value = "";
+    showToast("Subscription successful");
+    setTimeout(() => { message.textContent = ""; }, 4000);
+  });
+
+  function setupCountdown(){
+    const target = new Date(Date.now() + (24*60*60*1000) + (36*60*1000));
+
+    function updateCountdown(){
+      const difference = target - Date.now();
+      const set = (id, val) => document.getElementById(id).textContent = String(val).padStart(2,"0");
+
+      if (difference <= 0){
+        ["dealDays","dealHours","dealMinutes","dealSeconds"].forEach(id => set(id,0));
+        return;
+      }
+
+      const days = Math.floor(difference / (1000*60*60*24));
+      const hours = Math.floor((difference % (1000*60*60*24)) / (1000*60*60));
+      const minutes = Math.floor((difference % (1000*60*60)) / (1000*60));
+      const seconds = Math.floor((difference % (1000*60)) / 1000);
+
+      set("dealDays", days);
+      set("dealHours", hours);
+      set("dealMinutes", minutes);
+      set("dealSeconds", seconds);
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  }
+
+  renderCategories();
+  renderProducts(PRODUCTS);
+  setupCountdown();
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
         // ============================================================
         // DEAL TIMER
