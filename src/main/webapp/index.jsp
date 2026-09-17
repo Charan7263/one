@@ -156,8 +156,15 @@
     <!-- ===== HEADER ===== -->
     <header id="siteHeader">
         <div class="container header-inner">
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
-            <a class="brand" href="#" aria-label="Chandu home"><i class="fas fa-store"></i><span>Chandu<span class="accent">Shop</span></span></a>
+            <div style="display:flex;align-items:center;gap:12px;">
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <em class="fas fa-bars"></em>
+                </button>
+                <a class="brand" href="#">
+                    <em class="fas fa-store-alt"></em>
+                    <span>Nexus<span class="accent">Shop</span></span>
+                </a>
+            </div>
 
             <nav class="main-nav" aria-label="Main navigation">
                 <ul>
